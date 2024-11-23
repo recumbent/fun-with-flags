@@ -4,7 +4,7 @@
     * [x] 3 - Introduce class, split by using nested functions
     * [x] 4 - Decision-making decorator
     * [x] 5 - DI factory
-    * [ ] 6 - Microsoft Feature Management - back to simple class example (but awaits)
+    * [x] 6 - [Microsoft Feature Management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/feature-management-dotnet-reference) - back to simple class example (but awaits)
     * [ ] 7 - Open Feature - with Microsoft... [FeatureManagement-Dotnet](https://github.com/microsoft/FeatureManagement-Dotnet)
     * [ ] 8 - Open Feature - [flagd](https://flagd.dev/)
     * [ ] 9 - Can I squeeze in a client side demo?
@@ -14,5 +14,5 @@
 * [ ] Slides in order to tell the story
 * [ ] Conclusion
 * [ ] links (lots of links!)
-* [ ] Bluesky domain things - murph.recumbent.co.uk, christine.recumbent.co.uk
+* [x] Bluesky domain things - murph.recumbent.co.uk, christine.recumbent.co.uk
 * [ ] If feeling keen, something, somewhere about more creative use of flags
