@@ -3,7 +3,7 @@
 * [ ] Demos
     * [x] 3 - Introduce class, split by using nested functions
     * [x] 4 - Decision-making decorator
-    * [ ] 5 - DI factory
+    * [x] 5 - DI factory
     * [ ] 6 - Microsoft Feature Management - back to simple class example (but awaits)
     * [ ] 7 - Open Feature - with Microsoft... [FeatureManagement-Dotnet](https://github.com/microsoft/FeatureManagement-Dotnet)
     * [ ] 8 - Open Feature - [flagd](https://flagd.dev/)
