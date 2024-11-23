@@ -1,7 +1,7 @@
 # TODO
 
 * [ ] Demos
-    * [ ] 3 - Introduce class, split by using nested functions
+    * [x] 3 - Introduce class, split by using nested functions
     * [ ] 4 - Decision-making decorator
     * [ ] 5 - DI factory
     * [ ] 6 - Microsoft Feature Management - back to simple class example (but awaits)
