@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Demo08": {
+      "commandName": "Project",
+      "commandLineArgs": "--backend \"flipt\""
+    }
+  }
+}
