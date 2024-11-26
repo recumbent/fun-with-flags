@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddCommandLine(args)
     .Build();
 
 var serviceProvider = new ServiceCollection()

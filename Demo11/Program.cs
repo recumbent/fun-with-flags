@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
     .AddUserSecrets<Program>()
+    .AddCommandLine(args)
     .Build();
 
 // Set the fliptProvider as the provider for the OpenFeature SDK

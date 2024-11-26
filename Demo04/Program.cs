@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddCommandLine(args)
     .Build();
 
 using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
