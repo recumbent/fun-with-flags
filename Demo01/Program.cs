@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
+    .AddCommandLine(args)
     .Build();
 
 Console.WriteLine("Hello, World!");
