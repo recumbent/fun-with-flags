@@ -1,0 +1,15 @@
+{
+  "name": "fun-with-flags",
+  "description": "Presentation on feature flags",
+  "author": "James Murphy",
+  "license": "ISC",
+  "volta": {
+    "node": "22.11.0"
+  },
+  "scripts": {
+    "marp": "marp FunWithFlags.md -w --html --allow-local-files "
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.3"
+  }
+}

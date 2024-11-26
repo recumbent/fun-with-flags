@@ -7,3 +7,4 @@
 **/[B|b]in
 
 *.user
+node_modules
