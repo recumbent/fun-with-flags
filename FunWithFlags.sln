@@ -13,7 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Demo12\Demo12.csproj = Demo12\Demo12.csproj
 		FunWithFlags.md = FunWithFlags.md
 		README.md = README.md
-		TODO.md = TODO.md
+		package.json = package.json
+		FunWithFlags.html = FunWithFlags.html
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo03", "Demo03\Demo03.csproj", "{2A7AC09F-EDF9-4A63-8802-6AC03C3F44B4}"

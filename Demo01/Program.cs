@@ -1,4 +1,4 @@
-﻿// Fun with Flags Demo 02
+﻿// Fun with Flags Demo 01
 using Microsoft.Extensions.Configuration;
 
 IConfiguration configuration = new ConfigurationBuilder()

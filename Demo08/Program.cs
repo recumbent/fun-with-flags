@@ -1,4 +1,4 @@
-﻿// Fun with Flags Demo 08 - OpenFeature / flagd / docker / flipt cloud
+﻿// Fun with Flags Demo 08 - OpenFeature / flagd / flipt - docker
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using OpenFeature;
@@ -50,7 +50,9 @@ public class ImportantService
 
     public async Task<string> DoSomething(string input)
     {
-        var showTime = await featureManager.GetBooleanValueAsync(Features.ShinyNewFeature, false);
+        // Just to show that this exists
+        var context = EvaluationContext.Builder().Set("email", "murph@flags.test").Build();
+        var showTime = await featureManager.GetBooleanValueAsync(Features.ShinyNewFeature, false, context);
         logger.LogInformation("ShinyNewFeature {IsEnabled}", showTime);
 
         return showTime switch

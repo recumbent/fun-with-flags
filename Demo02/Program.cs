@@ -21,3 +21,4 @@ public class FeatureManager(IConfiguration configuration)
 
     public bool IsEnabled(string feature) => configuration.GetValue<bool>($"FeatureManagement:{feature}");
 }
+    

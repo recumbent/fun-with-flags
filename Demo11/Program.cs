@@ -1,8 +1,7 @@
-﻿// Fun with Flags Demo 11 - flipt cloud native client
+﻿// Fun with Flags Demo 11 - flipt cloud / native client / lag
 using FliptClient;
 using FliptClient.Models;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")

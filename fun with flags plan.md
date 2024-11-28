@@ -2,9 +2,13 @@
 
 There is strong evidence to suggest that the best way to work is trunk driven development - enough smart people being successful and with reasonable evidence - DORA metrics - to suggest its certainly something we should look at.
 
+---
+
 To make this work we have to do proper continuous integration - pushing our code to the trunk (not to a branch, but to the main branch we build and deploy from) at least once a day.
 
 Inherent in this is the assumption that if you push code it _will_ go into production (that leads to continuous delivery and contninuous deployment)
+
+---
 
 To make this work requires a couple a few things - first and foremost a test suite and test practices that give you confidence that issues won't make it to production - this strongly implies test first.
 
@@ -22,9 +26,11 @@ Specifically feature flags I have borrowed a definition:
 
 Feature flags are a software development technique that allows teams to enable, disable or change the behavior of certain features or code paths in a product or service, without modifying the source code.
 
-Which is worth a bit of exploration and I may be able to show you something interesting. I certainly have some opinions!
+Which is worth a bit of exploration and I may be able to show you something interesting
 
 So what do we need to implement feature flags? There are all kinds of possibilites, but for me we can a long way with just "on" and "off" - and for rapid feature delivery that's substantially what we need.
+
+---
 
 That means that the easiest implementation is just a config value...
 
@@ -32,21 +38,22 @@ Sample code.
 
 Clearly there are some limits - substantially we need to redeploy to twiddle the flag, but for a lot of deployments that's not a huge problem. And dotnet tooling lets us dynamically reload config using the options pattern.
 
+---
+
 There's a couple of more things I would probably add
+
 
 Slightly more sample code.
 
 This is gives us two learning points
 
 1. You don't _need_ 3rd party tooling (at least not for server side code) to be effective. You can make something similar work in client side code too
-1. Don't assume flags are instant (more on that later)
-This one causes pain, so please be aware!
 
 The first example is fairly trivial, but in the real world things are a bit more interesting
 
 First we have to work out how to get the flag to the point we want to evaluate it.
 
-There are a couple of simple choices - we're just using environment values then it becomes config, if we're using a more complex evaluation - if things are dynamic - we may need to pass in a function or a class.
+There are a couple of simple choices - if we're just using simple toggles then it becomes config, if we're using a more complex evaluation - if things are dynamic - we may need to pass in a function or a class.
 
 Samples
 
